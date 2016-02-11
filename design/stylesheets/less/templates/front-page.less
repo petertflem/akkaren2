@@ -1,0 +1,102 @@
+.front-page {
+  h1 {
+    color: #e84747;
+    font-weight: 900;
+    font-size: 60px;
+
+    margin-bottom: 20px;
+  }
+
+  .front-page-section {
+    position: relative;
+
+    width: 100%;
+    height: 450px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.underwater-rugby .background-image {
+      background-image: url('http://lorempixel.com/1920/1080/animals');
+    }
+
+    &.underwater-hockey .background-image {
+      background-image: url('http://lorempixel.com/1920/1080/sports');
+    }
+
+    &.underwater-photo .background-image {
+      background-image: url('http://lorempixel.com/1920/1080/cats');
+    }
+
+    &.diving .background-image {
+      background-image: url('http://lorempixel.com/1920/1080/city');
+    }
+
+    .background-image {
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+
+      height: 250px;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+
+      line-height: 250px;
+
+      .layer {
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        transition: background-color 0.4s;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        .title-container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+
+          h2 {
+            color: white;
+            font-weight: 900;
+            font-size: 52px;
+            letter-spacing: 2px;
+            text-decoration: none;
+
+            transition:  text-decoration .2s;
+
+            span {
+              display: inline;
+              text-decoration: none;
+              opacity: 0;
+              transition: visibility .2s, opacity .2s;
+            }
+          }
+        }
+      }
+    }
+
+    .news {
+      margin-top: 250px;
+    }
+  }
+
+  .front-page-section:hover {
+    .background-image {
+      .layer {
+        background-color: rgba(0, 0, 0, 0.8);
+
+        h2 {
+          text-decoration: underline;
+
+          span {
+            text-decoration: none;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "akkaren",
+  "version": "1.0.0",
+  "description": "Akkarens homepage",
+  "author": "Peter Tollnes Flem",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.5",
+    "gulp-watch": "^4.3.5"
+  }
+}
