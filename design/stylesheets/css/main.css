@@ -6727,84 +6727,155 @@ button.close {
 .center-text {
   text-align: center;
 }
+html,
+body {
+  height: 100%;
+}
+.front-page {
+  position: relative;
+  top: 47%;
+  transform: translateY(-50%);
+  /*.front-page-section {
+    position: relative;
+
+    width: 100%;
+    height: 450px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.underwater-rugby .background-image {
+      background-image: url('http://lorempixel.com/1920/1080/animals');
+    }
+
+    &.underwater-hockey .background-image {
+      background-image: url('http://lorempixel.com/1920/1080/sports');
+    }
+
+    &.underwater-photo .background-image {
+      background-image: url('http://lorempixel.com/1920/1080/cats');
+    }
+
+    &.diving .background-image {
+      background-image: url('http://lorempixel.com/1920/1080/city');
+    }
+
+    .background-image {
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+
+      height: 250px;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+
+      line-height: 250px;
+
+      .layer {
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        transition: background-color 0.4s;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        .title-container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+
+          h2 {
+            color: white;
+            font-weight: 900;
+            font-size: 52px;
+            letter-spacing: 2px;
+            text-decoration: none;
+
+            transition:  text-decoration .2s;
+
+            span {
+              display: inline;
+              text-decoration: none;
+              opacity: 0;
+              transition: visibility .2s, opacity .2s;
+            }
+          }
+        }
+      }
+    }
+
+    .news {
+      margin-top: 250px;
+    }
+  }
+
+  .front-page-section:hover {
+    .background-image {
+      .layer {
+        background-color: rgba(0, 0, 0, 0.8);
+
+        h2 {
+          text-decoration: underline;
+
+          span {
+            text-decoration: none;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }*/
+}
 .front-page h1 {
   color: #e84747;
   font-weight: 900;
   font-size: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
-.front-page .front-page-section {
-  position: relative;
-  width: 100%;
-  height: 450px;
+.front-page hr {
+  margin-top: 5px;
+  margin-bottom: 12px;
 }
-.front-page .front-page-section:hover {
-  cursor: pointer;
+.front-page nav ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
 }
-.front-page .front-page-section.underwater-rugby .background-image {
-  background-image: url('http://lorempixel.com/1920/1080/animals');
-}
-.front-page .front-page-section.underwater-hockey .background-image {
-  background-image: url('http://lorempixel.com/1920/1080/sports');
-}
-.front-page .front-page-section.underwater-photo .background-image {
-  background-image: url('http://lorempixel.com/1920/1080/cats');
-}
-.front-page .front-page-section.diving .background-image {
-  background-image: url('http://lorempixel.com/1920/1080/city');
-}
-.front-page .front-page-section .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  line-height: 250px;
-}
-.front-page .front-page-section .background-image .layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  transition: background-color 0.4s;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.front-page .front-page-section .background-image .layer .title-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-.front-page .front-page-section .background-image .layer .title-container h2 {
-  color: white;
-  font-weight: 900;
-  font-size: 52px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  transition: text-decoration 0.2s;
-}
-.front-page .front-page-section .background-image .layer .title-container h2 span {
+.front-page nav ul li {
   display: inline;
-  text-decoration: none;
-  opacity: 0;
-  transition: visibility .2s, opacity .2s;
 }
-.front-page .front-page-section .news {
-  margin-top: 250px;
-}
-.front-page .front-page-section:hover .background-image .layer {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.front-page .front-page-section:hover .background-image .layer h2 {
+.front-page nav ul li > a {
+  color: black;
   text-decoration: underline;
+  font-size: 15px;
 }
-.front-page .front-page-section:hover .background-image .layer h2 span {
-  text-decoration: none;
-  opacity: 1;
+.front-page nav ul li:not(:first-child):before {
+  content: "\007C";
+  padding-right: 4px;
+}
+.front-page .news-excerpts {
+  margin-top: 50px;
+}
+.front-page .news-excerpts h2 {
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.front-page .news-excerpts .news-excerpt {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+}
+.front-page .news-excerpts .news-excerpt:not(:first-child) {
+  margin-top: 4px;
+}
+.front-page .news-excerpts .news-excerpt .title {
+  font-size: 15px;
+  font-style: italic;
+}
+.front-page .news-excerpts .news-excerpt .excerpt {
+  padding-left: 25px;
+  font-size: 14px;
 }
